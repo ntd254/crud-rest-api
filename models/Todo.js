@@ -9,11 +9,7 @@ const todoSchema = new Schema({
   completed: {
     type: Boolean,
     default: false
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now()
   }
-});
+}, {timestamps: true});
 
 module.exports = model("Todo", todoSchema);
