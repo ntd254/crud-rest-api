@@ -1,4 +1,4 @@
-const Todo = require("../models/Todo");
+const {Todo} = require("../models");
 const todoValidation = require("../validations/todoValidation");
 
 async function getAllTodos(req, res, next) {
